@@ -1,4 +1,13 @@
 import os
+
+diretorioInformado = input("Informe o diretório: ")
+
+os.getcwd()
+
+separador = r'\\'
+
+os.chdir(diretorioInformado.replace(separador,"/"))
+
 currentDir = os.getcwd()
 
 arrDir = os.listdir()
